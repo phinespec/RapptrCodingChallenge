@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		CCDA0AA127EBC00600C8F565 /* RapptrCodingChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA0AA027EBC00600C8F565 /* RapptrCodingChallengeApp.swift */; };
-		CCDA0AA327EBC00600C8F565 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA0AA227EBC00600C8F565 /* ContentView.swift */; };
+		CCDA0AA327EBC00600C8F565 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA0AA227EBC00600C8F565 /* HomeScreenView.swift */; };
 		CCDA0AA527EBC00700C8F565 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCDA0AA427EBC00700C8F565 /* Assets.xcassets */; };
 		CCDA0AA827EBC00700C8F565 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCDA0AA727EBC00700C8F565 /* Preview Assets.xcassets */; };
+		CCDA0AB127EBC52D00C8F565 /* ChatClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA0AAF27EBC52D00C8F565 /* ChatClient.swift */; };
+		CCDA0AB227EBC52D00C8F565 /* LoginClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA0AB027EBC52D00C8F565 /* LoginClient.swift */; };
+		CCDA0AB527EBC53700C8F565 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA0AB427EBC53700C8F565 /* Message.swift */; };
+		CCDA0ABD27EBC8CC00C8F565 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA0ABC27EBC8CC00C8F565 /* ButtonView.swift */; };
+		CCDA0AC327ECE0C700C8F565 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA0AC227ECE0C700C8F565 /* Color.swift */; };
+		CCDA0AC527ECF84F00C8F565 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA0AC427ECF84F00C8F565 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CCDA0A9D27EBC00600C8F565 /* RapptrCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RapptrCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCDA0AA027EBC00600C8F565 /* RapptrCodingChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapptrCodingChallengeApp.swift; sourceTree = "<group>"; };
-		CCDA0AA227EBC00600C8F565 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CCDA0AA227EBC00600C8F565 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
 		CCDA0AA427EBC00700C8F565 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCDA0AA727EBC00700C8F565 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CCDA0AAF27EBC52D00C8F565 /* ChatClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatClient.swift; sourceTree = "<group>"; };
+		CCDA0AB027EBC52D00C8F565 /* LoginClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginClient.swift; sourceTree = "<group>"; };
+		CCDA0AB427EBC53700C8F565 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		CCDA0ABC27EBC8CC00C8F565 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		CCDA0AC227ECE0C700C8F565 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		CCDA0AC427ECF84F00C8F565 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,12 @@
 		CCDA0A9F27EBC00600C8F565 /* RapptrCodingChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				CCDA0AC127ECE0B200C8F565 /* Extensions */,
+				CCDA0AB927EBC83400C8F565 /* Views */,
+				CCDA0AB627EBC6F800C8F565 /* ViewModels */,
 				CCDA0AA027EBC00600C8F565 /* RapptrCodingChallengeApp.swift */,
-				CCDA0AA227EBC00600C8F565 /* ContentView.swift */,
+				CCDA0AAE27EBC52D00C8F565 /* Clients */,
+				CCDA0AB327EBC53700C8F565 /* Models */,
 				CCDA0AA427EBC00700C8F565 /* Assets.xcassets */,
 				CCDA0AA627EBC00700C8F565 /* Preview Content */,
 			);
@@ -65,6 +81,64 @@
 				CCDA0AA727EBC00700C8F565 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CCDA0AAE27EBC52D00C8F565 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				CCDA0AAF27EBC52D00C8F565 /* ChatClient.swift */,
+				CCDA0AB027EBC52D00C8F565 /* LoginClient.swift */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
+		CCDA0AB327EBC53700C8F565 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CCDA0AB427EBC53700C8F565 /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CCDA0AB627EBC6F800C8F565 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CCDA0AC427ECF84F00C8F565 /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CCDA0AB927EBC83400C8F565 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CCDA0ABB27EBC85A00C8F565 /* Component */,
+				CCDA0ABA27EBC85000C8F565 /* Core */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CCDA0ABA27EBC85000C8F565 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CCDA0AA227EBC00600C8F565 /* HomeScreenView.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CCDA0ABB27EBC85A00C8F565 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				CCDA0ABC27EBC8CC00C8F565 /* ButtonView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		CCDA0AC127ECE0B200C8F565 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CCDA0AC227ECE0C700C8F565 /* Color.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +211,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCDA0AA327EBC00600C8F565 /* ContentView.swift in Sources */,
+				CCDA0AB227EBC52D00C8F565 /* LoginClient.swift in Sources */,
+				CCDA0AC527ECF84F00C8F565 /* HomeViewModel.swift in Sources */,
+				CCDA0AB127EBC52D00C8F565 /* ChatClient.swift in Sources */,
+				CCDA0AB527EBC53700C8F565 /* Message.swift in Sources */,
+				CCDA0AA327EBC00600C8F565 /* HomeScreenView.swift in Sources */,
 				CCDA0AA127EBC00600C8F565 /* RapptrCodingChallengeApp.swift in Sources */,
+				CCDA0ABD27EBC8CC00C8F565 /* ButtonView.swift in Sources */,
+				CCDA0AC327ECE0C700C8F565 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
