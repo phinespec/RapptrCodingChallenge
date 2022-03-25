@@ -11,13 +11,14 @@ import SwiftUI
 struct RapptrCodingChallengeApp: App {
     
     @StateObject var mainViewModel = HomeViewModel()
+    @StateObject var chatViewModel = ChatViewModel()
     
     
     init() {
       let coloredAppearance = UINavigationBarAppearance()
       coloredAppearance.configureWithOpaqueBackground()
         coloredAppearance.backgroundColor = UIColor(Color.theme.button)
-        coloredAppearance.titleTextAttributes = [.foregroundColor: UIColor(Color.theme.general), .font: UIFont(name: "AvenirNext-Medium", size: 17)!]
+        coloredAppearance.titleTextAttributes = [.foregroundColor: UIColor(Color.theme.general)]
       coloredAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor(Color.theme.general)]
       
       UINavigationBar.appearance().standardAppearance = coloredAppearance
@@ -33,6 +34,9 @@ struct RapptrCodingChallengeApp: App {
                 HomeScreenView()
             }
             .navigationViewStyle(.stack)
+            .environmentObject(mainViewModel)
+            .environmentObject(chatViewModel)
         }
+        
     }
 }

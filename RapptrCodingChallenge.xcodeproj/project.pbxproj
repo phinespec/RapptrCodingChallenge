@@ -17,6 +17,10 @@
 		CCDA0ABD27EBC8CC00C8F565 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA0ABC27EBC8CC00C8F565 /* ButtonView.swift */; };
 		CCDA0AC327ECE0C700C8F565 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA0AC227ECE0C700C8F565 /* Color.swift */; };
 		CCDA0AC527ECF84F00C8F565 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA0AC427ECF84F00C8F565 /* HomeViewModel.swift */; };
+		CCDA0ACB27ED78C700C8F565 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA0ACA27ED78C700C8F565 /* ChatViewModel.swift */; };
+		CCDA0ACD27ED7B0F00C8F565 /* ChatScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA0ACC27ED7B0F00C8F565 /* ChatScreenView.swift */; };
+		CCDA0ACF27ED7FB000C8F565 /* LoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA0ACE27ED7FB000C8F565 /* LoginScreenView.swift */; };
+		CCDA0AD127ED7FE700C8F565 /* AnimationScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA0AD027ED7FE700C8F565 /* AnimationScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,10 @@
 		CCDA0ABC27EBC8CC00C8F565 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		CCDA0AC227ECE0C700C8F565 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		CCDA0AC427ECF84F00C8F565 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		CCDA0ACA27ED78C700C8F565 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		CCDA0ACC27ED7B0F00C8F565 /* ChatScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreenView.swift; sourceTree = "<group>"; };
+		CCDA0ACE27ED7FB000C8F565 /* LoginScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenView.swift; sourceTree = "<group>"; };
+		CCDA0AD027ED7FE700C8F565 /* AnimationScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +71,10 @@
 		CCDA0A9F27EBC00600C8F565 /* RapptrCodingChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				CCDA0AA027EBC00600C8F565 /* RapptrCodingChallengeApp.swift */,
 				CCDA0AC127ECE0B200C8F565 /* Extensions */,
 				CCDA0AB927EBC83400C8F565 /* Views */,
 				CCDA0AB627EBC6F800C8F565 /* ViewModels */,
-				CCDA0AA027EBC00600C8F565 /* RapptrCodingChallengeApp.swift */,
 				CCDA0AAE27EBC52D00C8F565 /* Clients */,
 				CCDA0AB327EBC53700C8F565 /* Models */,
 				CCDA0AA427EBC00700C8F565 /* Assets.xcassets */,
@@ -104,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				CCDA0AC427ECF84F00C8F565 /* HomeViewModel.swift */,
+				CCDA0ACA27ED78C700C8F565 /* ChatViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -111,7 +120,6 @@
 		CCDA0AB927EBC83400C8F565 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CCDA0ABB27EBC85A00C8F565 /* Component */,
 				CCDA0ABA27EBC85000C8F565 /* Core */,
 			);
 			path = Views;
@@ -120,6 +128,11 @@
 		CCDA0ABA27EBC85000C8F565 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				CCDA0AC627ED77CA00C8F565 /* Home */,
+				CCDA0AC727ED77D400C8F565 /* Chat */,
+				CCDA0AC827ED77F100C8F565 /* Login */,
+				CCDA0AC927ED77FB00C8F565 /* Animation */,
+				CCDA0ABB27EBC85A00C8F565 /* Component */,
 				CCDA0AA227EBC00600C8F565 /* HomeScreenView.swift */,
 			);
 			path = Core;
@@ -139,6 +152,37 @@
 				CCDA0AC227ECE0C700C8F565 /* Color.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CCDA0AC627ED77CA00C8F565 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CCDA0AC727ED77D400C8F565 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				CCDA0ACC27ED7B0F00C8F565 /* ChatScreenView.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		CCDA0AC827ED77F100C8F565 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CCDA0ACE27ED7FB000C8F565 /* LoginScreenView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CCDA0AC927ED77FB00C8F565 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				CCDA0AD027ED7FE700C8F565 /* AnimationScreenView.swift */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,10 +258,14 @@
 				CCDA0AB227EBC52D00C8F565 /* LoginClient.swift in Sources */,
 				CCDA0AC527ECF84F00C8F565 /* HomeViewModel.swift in Sources */,
 				CCDA0AB127EBC52D00C8F565 /* ChatClient.swift in Sources */,
+				CCDA0AD127ED7FE700C8F565 /* AnimationScreenView.swift in Sources */,
 				CCDA0AB527EBC53700C8F565 /* Message.swift in Sources */,
 				CCDA0AA327EBC00600C8F565 /* HomeScreenView.swift in Sources */,
 				CCDA0AA127EBC00600C8F565 /* RapptrCodingChallengeApp.swift in Sources */,
+				CCDA0ACD27ED7B0F00C8F565 /* ChatScreenView.swift in Sources */,
 				CCDA0ABD27EBC8CC00C8F565 /* ButtonView.swift in Sources */,
+				CCDA0ACB27ED78C700C8F565 /* ChatViewModel.swift in Sources */,
+				CCDA0ACF27ED7FB000C8F565 /* LoginScreenView.swift in Sources */,
 				CCDA0AC327ECE0C700C8F565 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

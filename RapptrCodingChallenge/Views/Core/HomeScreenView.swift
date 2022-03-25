@@ -8,22 +8,28 @@
 import SwiftUI
 
 struct HomeScreenView: View {
+    
+    @State private var navIsActive: Bool = false
+    @State private var destination: Destination?
+    
     var body: some View {
         ZStack {
-           Image("bg_home_menu")
-                .resizable()
-                .scaledToFill()
-                .edgesIgnoringSafeArea(.bottom)
-            
-            VStack(spacing: 20) {
-                Group {
-                    ButtonView(imageName: "ic_chat", labelText: "Chat")
-                    ButtonView(imageName: "ic_login", labelText: "Login")
-                    ButtonView(imageName: "ic_animation", labelText: "Animation")
+            NavigationLink(isActive: $navIsActive) {
+                if destination == .chat {
+                    ChatScreenView()
                 }
-                .padding(.horizontal, 40)
-                
+                else if destination == .login {
+                    LoginScreenView()
+                }
+                else {
+                    AnimationScreenView()
+                }
+            } label: {
+                EmptyView()
             }
+
+            background
+            buttons
         }
         .navigationTitle("Coding Tasks")
         .navigationBarTitleDisplayMode(.inline)
@@ -31,6 +37,33 @@ struct HomeScreenView: View {
 }
 
 extension HomeScreenView {
+    
+    var background: some View {
+        Image("bg_home_menu")
+             .resizable()
+             .scaledToFill()
+             .edgesIgnoringSafeArea(.bottom)
+    }
+    
+    var buttons: some View {
+        VStack(spacing: 20) {
+            Group {
+                
+                ButtonView(imageName: "ic_chat", labelText: "Chat") { navIsActive = true; destination = .chat }
+                ButtonView(imageName: "ic_login", labelText: "Login") { navIsActive = true; destination = .login }
+                ButtonView(imageName: "ic_animation", labelText: "Animation") { navIsActive = true; destination = .animation }
+            }
+            .padding(.horizontal, 40)
+            
+        }
+    }
+    
+    enum Destination {
+        case chat
+        case login
+        case animation
+        
+    }
     
 }
 
