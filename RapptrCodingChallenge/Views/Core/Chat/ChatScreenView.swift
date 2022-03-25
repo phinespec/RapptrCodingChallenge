@@ -11,8 +11,15 @@ import SwiftUI
 
 struct ChatScreenView: View {
     
+    @EnvironmentObject var chatViewModel: ChatViewModel
+    
     var body: some View {
-        Text("Chat View!  Hello")
+        List {
+            ForEach(chatViewModel.allMessages, id: \.self) { message in
+                Text(message.username)
+            }
+        }
+        .listStyle(PlainListStyle())
     }
 }
 
