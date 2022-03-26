@@ -11,7 +11,8 @@ struct Response: Codable {
     var data: [Message]
 }
 
-struct Message: Codable, Hashable {
+struct Message: Codable, Identifiable {
+    var id: String = UUID().uuidString
     var userID: String
     var username: String
     var avatarURL: String

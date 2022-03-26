@@ -23,10 +23,7 @@ class ChatDataService {
                     // Try and decode the json if we have data
                     let decoder = JSONDecoder()
                     let result = try decoder.decode(Response.self, from: jsonData)
-                    DispatchQueue.main.async {
-                        completion(.success(result))
-                    }
-                    
+                    completion(.success(result))
                 } catch {
                     completion(.failure(.unableToDecode))
                 }

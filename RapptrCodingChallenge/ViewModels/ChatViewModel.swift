@@ -22,7 +22,9 @@ class ChatViewModel: ObservableObject {
         chatDataService.fetchChatData { [weak self] result in
             switch result {
             case .success(let response):
-                self?.allMessages = response.data
+                DispatchQueue.main.async {
+                    self?.allMessages = response.data
+                }
             case .failure(let error):
                 print("Error fetching chat messages! \(error)")
             }

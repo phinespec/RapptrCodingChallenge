@@ -28,6 +28,7 @@ struct RapptrCodingChallengeApp: App {
       UINavigationBar.appearance().tintColor = UIColor(Color.theme.general)
     }
     
+    
     var body: some Scene {
         WindowGroup {
             NavigationView {
@@ -39,4 +40,12 @@ struct RapptrCodingChallengeApp: App {
         }
         
     }
+}
+
+extension UINavigationController {
+
+  open override func viewWillLayoutSubviews() {
+    navigationBar.topItem?.backButtonDisplayMode = .minimal
+  }
+
 }

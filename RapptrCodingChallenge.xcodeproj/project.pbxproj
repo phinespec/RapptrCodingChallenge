@@ -23,9 +23,11 @@
 		CCDA0AD127ED7FE700C8F565 /* AnimationScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA0AD027ED7FE700C8F565 /* AnimationScreenView.swift */; };
 		CCDA0AD427ED837B00C8F565 /* ChatDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA0AD327ED837B00C8F565 /* ChatDataService.swift */; };
 		CCDA0AD727ED844700C8F565 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA0AD627ED844700C8F565 /* Constants.swift */; };
+		CCDA0AD927ED9B2C00C8F565 /* ChatListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA0AD827ED9B2C00C8F565 /* ChatListItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CCA8112927EEE3A9007EFEE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CCDA0A9D27EBC00600C8F565 /* RapptrCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RapptrCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCDA0AA027EBC00600C8F565 /* RapptrCodingChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapptrCodingChallengeApp.swift; sourceTree = "<group>"; };
 		CCDA0AA227EBC00600C8F565 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 		CCDA0AD027ED7FE700C8F565 /* AnimationScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationScreenView.swift; sourceTree = "<group>"; };
 		CCDA0AD327ED837B00C8F565 /* ChatDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDataService.swift; sourceTree = "<group>"; };
 		CCDA0AD627ED844700C8F565 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CCDA0AD827ED9B2C00C8F565 /* ChatListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,7 @@
 		CCDA0A9F27EBC00600C8F565 /* RapptrCodingChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				CCA8112927EEE3A9007EFEE7 /* Info.plist */,
 				CCDA0AD527ED842F00C8F565 /* Utils */,
 				CCDA0AD227ED834300C8F565 /* Services */,
 				CCDA0AA027EBC00600C8F565 /* RapptrCodingChallengeApp.swift */,
@@ -171,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				CCDA0ACC27ED7B0F00C8F565 /* ChatScreenView.swift */,
+				CCDA0AD827ED9B2C00C8F565 /* ChatListItemView.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -285,6 +290,7 @@
 				CCDA0AB527EBC53700C8F565 /* Response.swift in Sources */,
 				CCDA0AA327EBC00600C8F565 /* HomeScreenView.swift in Sources */,
 				CCDA0AA127EBC00600C8F565 /* RapptrCodingChallengeApp.swift in Sources */,
+				CCDA0AD927ED9B2C00C8F565 /* ChatListItemView.swift in Sources */,
 				CCDA0ACD27ED7B0F00C8F565 /* ChatScreenView.swift in Sources */,
 				CCDA0ABD27EBC8CC00C8F565 /* ButtonView.swift in Sources */,
 				CCDA0ACB27ED78C700C8F565 /* ChatViewModel.swift in Sources */,
@@ -424,6 +430,7 @@
 				DEVELOPMENT_TEAM = NXX3PX4442;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RapptrCodingChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -453,6 +460,7 @@
 				DEVELOPMENT_TEAM = NXX3PX4442;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RapptrCodingChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
